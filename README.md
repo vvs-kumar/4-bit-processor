@@ -40,7 +40,8 @@ Instruction sets.
 ```
 
 Instruction Set Description :
-	NOP – No Operation occurs in that program cycle.
+```	
+ NOP – No Operation occurs in that program cycle.
 	ADD – Addition of 2 (4 bit) number with carry, the carry is updated in flag register, one value should be loaded in Ram and other from Accumulator.
 	SUB – Subtraction of 2 (4 bit) number with carry, the borrow is updated in flag register, one value should be loaded in Ram and other from Accumulator.
 	AND – Bitwise AND operation between 2 (4 bit) numbers, one value should be loaded in Ram and other from Accumulator.
@@ -55,7 +56,7 @@ Instruction Set Description :
 	LDA – Load Accumulator, Loads the Accumulator with a value from RAM address location.	STA – Stores Accumulator value to specific RAM address, specified along with Instruction.
 	WOP – Write the values from specified RAM location to 4 different outputs, 1 as ON and 0 as OFF.
 	LDI – Loads an immediate value to the accumulator , value specified along with the instructions.
-
+```
 			
 
 
