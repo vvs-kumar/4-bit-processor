@@ -7,7 +7,7 @@ Specifications:
 	64 bits data memory
 	Operating frequency 100-1000 kHz
 	5 Bit flag register (Great, Less, Equal, Carry, Borrow)
- 
+ ```
 Pin Numbers: 	
              +---\/---+
         RST 1|        |14 VCC
@@ -18,7 +18,7 @@ Pin Numbers:
         CLK 6|        |9  NC
         GND 7|        |8  Result
              +--------+
-
+```
 Instruction sets. 
 	NOP - 0000
 	ADD - 0001
