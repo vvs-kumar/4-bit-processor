@@ -68,7 +68,7 @@ if(reset)
         value<=4'b0000;
         result<=4'b0000;
         delay_counter <= 4'b0000;
-        program_counter=4'b0000;
+        program_counter<=4'b0000;
         curr_instruction<=8'b0000_0000;
         ram_w_en<=0;
         acc_en<=0;
