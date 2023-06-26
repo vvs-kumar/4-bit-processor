@@ -20,12 +20,13 @@ Pin Numbers:
              +--------+
 ```
 Instruction sets. 
-	NOP - 0000
+```
+ 	NOP - 0000
 	ADD - 0001
 	SUB - 0010
 	AND - 0011
 	OR - 0100	
-  XOR - 0101
+  	XOR - 0101
 	CMP - 0110
 	JMP - 0111
 	JZ - 1000
@@ -36,7 +37,7 @@ Instruction sets.
 	STA - 1101
 	WOP - 1110
 	LDI - 1111
-
+```
 
 Instruction Set Description :
 	NOP – No Operation occurs in that program cycle.
