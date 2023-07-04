@@ -63,5 +63,20 @@ Instruction Set Description :
 
 Each operation updates the result register and output can be obtained periodically, Input clock is powered by internal clock, need to update with external clock. Operations involving flag register updates the value in control unit, RAM location 1111(16) is reserved for Program Jump operation.
 Program memory has 256 locations, controlled by 8-bit values, the values are stored in LUT.
+
+MODULES LIST
+```
+adder_1_bit
+sub_1bit
+adder
+subtractor
+program_memory
+data_memory
+accumulator
+alu
+instruction_decoder
+control_unit
+
+```
 	
 
