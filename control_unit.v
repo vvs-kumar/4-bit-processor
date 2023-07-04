@@ -6,7 +6,7 @@ reg [3:0]opcode;
 reg [3:0]counter;
 
 reg [3:0]delay_counter;
-reg [3:0]DELAY_VALUE=0;
+reg [3:0]DELAY_VALUE;
 
 
 
@@ -103,8 +103,8 @@ else
                         end
                     4'b0001://Adder opcode
                         begin
-			                ram_w_en<=0;//Disable ram Write from any previous enable
-			                acc_en<=1;//Enables the accumulator
+			    ram_w_en<=0;//Disable ram Write from any previous enable
+			    acc_en<=1;//Enables the accumulator
                             acc_in<=alu_out;//Stores the value from alu to accumulator
                             opcode<=opcode_out;// Opcode decoded from instruction decoder.
                             address<=operand;// Address associated with Opcode here "4 BIT ADDITION"
@@ -116,7 +116,7 @@ else
                     4'b0010://Subtraction opcode 
                         begin
                             ram_w_en<=0;//Disable ram Write from any previous enable
-			                acc_en<=1;//Enables the accumulator
+			    acc_en<=1;//Enables the accumulator
                             acc_in<=alu_out;//Stores the value from alu to accumulator
                             opcode<=opcode_out;// Opcode decoded from instruction decoder.
                             address<=operand;// Address associated with Opcode here "4 BIT SUBTRACTION"
@@ -128,7 +128,7 @@ else
                     4'b0011://Bitwise AND
                         begin
                             ram_w_en<=0;//Disable ram Write from any previous enable
-			                acc_en<=1;//Enables the accumulator
+			    acc_en<=1;//Enables the accumulator
                             acc_in<=alu_out;//Stores the value from alu to accumulator
                             opcode<=opcode_out;// Opcode decoded from instruction decoder.
                             address<=operand;// Address associated with Opcode here "BITWISE AND"
@@ -140,7 +140,7 @@ else
                     4'b0100://Bitwise OR
                         begin
                             ram_w_en<=0;//Disable ram Write from any previous enable
-			                acc_en<=1;//Enables the accumulator
+			    acc_en<=1;//Enables the accumulator
                             acc_in<=alu_out;//Stores the value from alu to accumulator
                             opcode<=opcode_out;// Opcode decoded from instruction decoder.
                             address<=operand;// Address associated with Opcode here "BITWISE OR"
@@ -152,7 +152,7 @@ else
                     4'b0101://Bitwise XOR
                         begin
                             ram_w_en<=0;//Disable ram Write from any previous enable
-			                acc_en<=1;//Enables the accumulator
+			    acc_en<=1;//Enables the accumulator
                             acc_in<=alu_out;//Stores the value from alu to accumulator
                             opcode<=opcode_out;// Opcode decoded from instruction decoder.
                             address<=operand;// Address associated with Opcode here "BITWISE XOR"
