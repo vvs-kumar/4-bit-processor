@@ -55,7 +55,7 @@ else
 				    carry_in<=carry_flag;
 					op_a_in <= a;			// Set the first operand of the adder to the immediate value (a)
 					op_b_in <= b;  // Set the second operand of the adder to the value in the accumulator
-					result = add_out;
+					result <= add_out;
 					acc_in <= add_out;   // Set the accumulator input to the output of the adder
 					flag[1]<=carry_out;
 
@@ -65,7 +65,7 @@ else
 				    borrow_in<=borrow_flag;
 					op_a_in <= a;            // Set the first operand of the subtractor to the immediate value (a)
 					op_b_in <= b;  // Set the second operand of the subtractor to the value in the accumulator
-					result = sub_out;       // Store the accumulator output in the "result" variable
+					result <= sub_out;       // Store the accumulator output in the "result" variable
 					acc_in <= sub_out;    // Set the accumulator input to the output of the subtractor
 					flag[0]<=borrow_out;
 				end
